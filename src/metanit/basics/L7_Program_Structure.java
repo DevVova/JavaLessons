@@ -1,7 +1,7 @@
-package basics;
+package metanit.basics;
 
 //Это пример однострочного комментария
-public class L6_Program_Structure {
+public class L7_Program_Structure {
     /*
     Ниже пример метода который должен обязательно присутствовать
     в любой программе, в главном классе и из него вызываются другие методы других

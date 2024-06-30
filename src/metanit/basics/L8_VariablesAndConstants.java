@@ -1,6 +1,6 @@
-package basics;
+package metanit.basics;
 
-public class L7_VariablesAndConstants {
+public class L8_VariablesAndConstants {
     public static void main(String[] args) {
         int a;//Объявление переменной.
         a = 34;//Присвоение переменной значения.
