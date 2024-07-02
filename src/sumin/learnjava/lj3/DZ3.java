@@ -7,6 +7,7 @@ public class DZ3 {
         System.out.print("Введите количество секунд: ");
         Scanner in = new Scanner(System.in);
         int times = in.nextInt();
+        in.close();
         int days = times / (24 * 3600);
         int hours = times % (24 * 3600) / 3600;
         int minutes = (times % (24 * 3600)) % 3600 / 60;
