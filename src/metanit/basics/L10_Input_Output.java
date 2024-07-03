@@ -1,5 +1,6 @@
 package metanit.basics;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class L10_Input_Output {
@@ -61,6 +62,11 @@ public class L10_Input_Output {
         System.out.print("Введите ваше число десятичное: ");
         float number = in.nextFloat();
         System.out.printf("Hello! Your name is %s.\n", number);//А здесь вообще не важно %s или %f.
-        in.close();//Это необходимо добавлять обязательно в конце.
+
+        //А вот как можно указать конкретную локализацию.
+        System.out.print("Введите ваше число десятичное: ");
+        in.useLocale(Locale.US); // Используем локаль с точкой как разделитель.
+        float number1 = in.nextFloat();
+        System.out.printf("Hello! Your name is %f.\n", number1);//А здесь вообще не важно %s или %f. Хотя здесь будет со всеми 6 знаками после запятой, а в примере выше, столько сколько есть.
     }
 }
