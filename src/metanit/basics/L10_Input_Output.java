@@ -68,5 +68,6 @@ public class L10_Input_Output {
         in.useLocale(Locale.US); // Используем локаль с точкой как разделитель.
         float number1 = in.nextFloat();
         System.out.printf("Hello! Your name is %f.\n", number1);//А здесь вообще не важно %s или %f. Хотя здесь будет со всеми 6 знаками после запятой, а в примере выше, столько сколько есть.
+        in.close();
     }
 }
