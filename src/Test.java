@@ -1,13 +1,28 @@
-import java.util.Locale;
-import java.util.Scanner;
-
 public class Test {
     public static void main(String[] args) {
-        System.out.print("Введите десятичное число с точкой в качестве разделителя дробной части: ");
-        Scanner in = new Scanner(System.in);
-        in.useLocale(Locale.US);
-        float a = in.nextFloat();
-        System.out.printf("Вы ввели %.1f.\n", a);
-        in.close();
+        int a = 8;
+        int b = 4;
+        b = ++a;
+        b += 35;
+        int c = a % b;
+        c = b--;
+        System.out.printf("c = %d, b =%d\n", c, b);
+        boolean bb = c < b;
+        System.out.println(bb);
+        if ((a == b) || (c == b)) System.out.println("Equals all.");
+        else System.out.println("Всё разное!!!");
+        System.out.printf("a do == %d\t", a);
+        a *= 34;
+        System.out.printf("a posle == %d\n", a);
+        int n = 3;
+        byte n1 = -6;
+        short n2 = 34;
+        n = n1 + n2;
+        System.out.println(n);
+        char ch = 'l';
+        n += (ch + 120);
+        System.out.println(n);
+        n1 = (byte)n;
+        System.out.println(n1);
     }
 }
