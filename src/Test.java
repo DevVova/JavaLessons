@@ -24,5 +24,17 @@ public class Test {
         System.out.println(n);
         n1 = (byte)n;
         System.out.println(n1);
+
+        boolean val = true;
+        boolean[] arr = new boolean[8];
+        int it = 0;
+        do {
+            it++;
+            if (it == 4) continue;
+            arr[it] = val;
+            val = !val;
+            System.out.printf("Элемент %d равен %b \t", it, arr[it]);
+            if (it == 6) break;
+        } while (it < 7);
     }
 }
