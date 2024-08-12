@@ -8,4 +8,7 @@ public class ImportPackages {
     public void printInfo() {
         System.out.printf("The number equals %d.\n", number);
     }
+    protected void printNumber() {
+        System.out.println(number);
+    }
 }
