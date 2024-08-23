@@ -8,11 +8,6 @@ public class Throw {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
-        try {
-            int k = 3 / 0;
-        } catch (Exception e) {
-            e.getStackTrace();
-        }
     }
 
     public static int divide(int a, int b) throws Exception {
